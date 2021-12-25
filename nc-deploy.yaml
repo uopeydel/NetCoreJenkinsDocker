@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nc-name
+  namespace: ncnamespace
+spec:
+  selector:
+    matchLabels:
+      app: nc-app-label
+      tier: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nc-app-label
+        tier: backend
+    spec:
+      containers:
+        - image: "lapadol/netcorejenkinsdocker:v1"
+          imagePullPolicy: Always
+          name: nc-name
+          ports:
+            - containerPort: 80
+          # volumeMounts:
+          #  - name: nc-name-storage
+          #    mountPath: /app/upload
+          #    readOnly: false
+      #volumes:
+      #  - name: nc-name-storage
+      #    hostPath:
+      #      path: /D/NCMount
+      #      type: DirectoryOrCreate

@@ -1,0 +1,24 @@
+  sudo install apt
+  sudo apt install git-all
+  sudo apt install git 
+  sudo apt-get update
+  sudo apt-get install ca-certificates
+  sudo apt-get install curl gnupg lsb-release
+  sudo apt install openssh-server
+  sudo apt-get install linux-cloud-tools-$(uname -r)
+  echo $(uname -r)
+  sudo reboot 
+
+https://docs.docker.com/engine/install/ubuntu/
+
+http://17x.2x.14x.15x:7010/weatherforecast
+ssh lapadol@17x.2x.14x.15x
+
+https://github.com/git-guides/install-git
+https://stackoverflow.com/questions/33027204/how-can-i-get-hyper-v-to-detect-my-ubuntu-vms-ip-address
+https://newbedev.com/shell-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket-at-unix-var-run-docker-sock-get-http-2fvar-2frun-2fdocker-sock-v1-24-containers-json-all-1-dial-unix-var-run-docker-sock-connect-permission-denied-code-example
+https://community.intersystems.com/post/configure-environment-use-docker-hyper-v-ubuntu-virtual-machines-running-windows-10-host
+https://jaehoo.wordpress.com/2019/06/11/jenkins-execute-script-over-ssh/
+
+
+cat /home/lapadol/jfile/jenkinskey.pub | ssh lapadol@17x.2x.14x.15x "mkdir -p ~/.ssh && touch /home/lapadol/jfile/jenkinskey && chmod -R go= ~/.ssh && cat >> /home/lapadol/jfile/jenkinskey"

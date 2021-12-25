@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nc-name
+  namespace: ncnamespace
+spec: 
+  type: LoadBalancer
+  selector:
+    app: nc-app-label
+  ports:
+  - protocol: "TCP"
+    port: 7980
+    # port: 80
+    targetPort: 80  
