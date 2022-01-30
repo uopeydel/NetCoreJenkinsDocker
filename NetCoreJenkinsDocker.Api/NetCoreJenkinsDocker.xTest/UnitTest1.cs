@@ -18,7 +18,7 @@ namespace NetCoreJenkinsDocker.xTest
         {
             var aObject = new SampleDataModel();
             aObject.Id = 4;
-            aObject.Id2 = 3;
+            aObject. Age = 3;
             aObject.Name = "test";
             ValidationContext context = new ValidationContext(aObject, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
@@ -42,7 +42,7 @@ namespace NetCoreJenkinsDocker.xTest
 
             _sampleDataRepoMocking
                 .Setup(s => s.GetData())
-                .Returns(Task.FromResult(new SampleDataModel { Id = 3, Id2 = 6, Name = "natest" }));
+                .Returns(Task.FromResult(new SampleDataModel { Id = 3, Age = 6, Name = "natest" }));
 
             var service = new SampleDataService(_sampleDataRepoMocking.Object);
             var serviceResult = await service.GetData();

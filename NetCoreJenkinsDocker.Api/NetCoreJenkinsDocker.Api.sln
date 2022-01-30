@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreJenkinsDocker.Api", "NetCoreJenkinsDocker.Api\NetCoreJenkinsDocker.Api.csproj", "{7322230B-FAA7-41B1-9552-00F86D2CF514}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreJenkinsDocker.xTest", "NetCoreJenkinsDocker.xTest\NetCoreJenkinsDocker.xTest.csproj", "{55849551-C0B1-4EA3-AF30-5852A3D44FC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreJenkinsDocker.xTest", "NetCoreJenkinsDocker.xTest\NetCoreJenkinsDocker.xTest.csproj", "{55849551-C0B1-4EA3-AF30-5852A3D44FC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

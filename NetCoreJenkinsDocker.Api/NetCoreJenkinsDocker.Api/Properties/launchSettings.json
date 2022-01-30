@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": false,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "swagger/index.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -21,8 +21,8 @@
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": false,
-      "launchUrl": "weatherforecast",
-      "applicationUrl": "http://localhost:5000",
+      "launchUrl": "swagger/index.html",
+      "applicationUrl": "http://localhost:5109",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
